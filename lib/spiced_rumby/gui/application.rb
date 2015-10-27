@@ -19,10 +19,10 @@ module SpicedRumby
       end
 
       Vedeu.configure do
-        # debug!
+        debug!
         root :welcome, :show
         log './gui.log'
-        colour_mode 16777216
+        # colour_mode 16777216
         terminal_mode :fake
         # interactive!
       end

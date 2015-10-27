@@ -1,5 +1,5 @@
 Vedeu.interface :chat do
-  delay 0.5
+  # delay 0.5
   visible false
   cursor false
   zindex 1
@@ -8,6 +8,10 @@ Vedeu.interface :chat do
   # border do
   #   title  "#{SpicedRumby::NAME}: v#{SpicedRumby::VERSION}"
   # end
+
+  geometry do
+    align :top, :left, use(:input).width, use(:input).north
+  end
 
   keymap do
     key(:ctrl_c) { Vedeu.exit }
